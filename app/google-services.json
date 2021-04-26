@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "770293571728",
+    "project_id": "toplivok-63bc6",
+    "storage_bucket": "toplivok-63bc6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:770293571728:android:e0e131738ec38e13a5b815",
+        "android_client_info": {
+          "package_name": "com.example.toplivok"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "770293571728-hf18t4btcc63r8u4gcqj4fhmhcc879vg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBybCb6iPo4DRyncR3d1DB9StGILd_EWLU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "770293571728-hf18t4btcc63r8u4gcqj4fhmhcc879vg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
