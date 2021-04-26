@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonAdd.setOnClickListener(this);
 
         displayAllFueling();
-
     }
 
     private void displayAllFueling() {
