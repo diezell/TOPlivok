@@ -30,28 +30,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void displayAllFueling() {
         ListView listOfFueling = findViewById(R.id.list_of_fueling);
-        adapter = new FirebaseListAdapter<Refueling>(this, Refueling.class, R.layout.list_item, FirebaseDatabase.getInstance().getReference()) {
+        adapter = new FirebaseListAdapter<Refueling>(this, Refueling.class, R.layout.list_item, FirebaseDatabase.getInstance().getReference().orderByChild("refuelingData")) {
             @Override
             protected void populateView(View v, Refueling model, int position) {
-                TextView odometer, price, totalCost;
+                TextView odometer, price, totalCost, dateTime;
                 odometer = v.findViewById(R.id.odometerValue);
                 price = v.findViewById(R.id.priceValue);
                 totalCost = v.findViewById(R.id.totalCostValue);
+                dateTime = v.findViewById(R.id.dateValue);
 
                 odometer.setText(String.valueOf(model.getOdometer()));
                 price.setText(String.valueOf(model.getPrice()));
                 totalCost.setText(String.valueOf(model.getCost()));
-//                dateTime.setText(DateFormat.format("dd.mm.yyyy", model.getTime()));
+                dateTime.setText(DateFormat.format("dd.MM.yy HH:mm", -1 * model.getRefuelingData()));
             }
         };
         listOfFueling.setAdapter(adapter);
     }
 
-
     @Override
     public void onClick(View v) {
-        Intent i;
-        i = new Intent(this, AddActivity.class);
-        startActivity(i);
+        Intent intent = new Intent(this, AddActivity.class);
+        startActivity(intent);
     }
 }

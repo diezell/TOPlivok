@@ -24,7 +24,14 @@
         android:id="@+id/totalCostValue"
         android:layout_marginTop="5dp"
         android:layout_below="@id/odometerValue"
-        android:textSize="18sp"/>
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/priceValue"
+        android:id="@+id/dateValue" />
 
 
 </RelativeLayout>

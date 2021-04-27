@@ -13,7 +13,7 @@ public class Refueling {
         this.odometer = odometer;
         this.price = price;
         this.cost = cost;
-        this.refuelingData = new Date().getTime();
+        this.refuelingData = -1 * new Date().getTime();
     }
 
     public Long getOdometer() {
