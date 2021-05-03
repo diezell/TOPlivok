@@ -42,6 +42,7 @@ public class AddActivity extends AppCompatActivity {
                                 Float.parseFloat(totalCost.getText().toString()))
                 );
 
+
                 Intent intent = new Intent(AddActivity.this, MainActivity.class);
                 startActivity(intent);
             }
